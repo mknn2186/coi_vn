@@ -1,0 +1,768 @@
+@charset "utf-8";
+
+
+
+/*  RESET CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+
+
+/* ========================================
+    全体設定
+========================================= */
+
+
+body {
+	width: 1300px;
+	margin: 0 auto;
+}
+
+
+a {
+	color: #746a57;
+	text-decoration:none;
+}
+
+
+/* micro clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+
+
+
+div#wrapper{
+	width: 1300px;
+	margin: 0 auto;
+}
+
+
+
+
+/* ========================================
+    TOP
+========================================= */
+
+
+/*  header  */
+
+header{
+	width: 1300px;
+	height: 150px;
+	margin: 0 auto;
+}
+
+header h1 a img{
+	width: 200px;
+	margin-top: 25px;
+	margin-left: 100px;
+}
+
+
+
+
+header nav {
+	float: right;
+	margin-top: -40px;
+	margin-right: 100px;
+}
+
+header nav ul li {
+	float:left; 
+	display: inline;
+	margin-left: 30px;
+}
+
+
+header nav ul li a{
+	font-family: 'Times New Roman';
+	font-size: 14px;
+}
+
+
+
+div.clear{
+	clear: both;
+}
+
+
+
+div#about h1{
+	font-size: 24px;
+	font-family: 'Hiragino Mincho ProN';
+	margin-top: 70px;
+	margin-left: 100px;
+	color: #746a57;
+}
+
+div#about h1 span{
+	display: block;
+	text-indent: 195px;
+	line-height: 50px;
+}
+
+
+
+div#about p{
+	font-size: 12px;
+	font-family: 'Hiragino Mincho ProN';
+	margin-top: 30px;
+	color: #746a57;
+	line-height: 35px;
+	margin-left: 100px;
+}
+
+
+
+div#about img{
+	float: right;
+	margin-top: -380px;
+	margin-right: 100px;
+}
+
+
+
+
+
+div.scroll{
+	position: relative;
+}
+
+div.scroll a.scroll span{
+display: flex;
+position: absolute;
+top: -110px;
+right: 130px;
+writing-mode: vertical-rl;
+letter-spacing: 3px;
+font-size: 15px;
+font-family: 'Times New Roman';
+}
+
+
+div.scroll a.scroll span::after{
+  content: '';
+  position: absolute;
+  bottom: -140px;
+  left: 45%;
+  width: 1px;
+  height: 120px;
+	background: #250f01;
+	
+}
+
+
+
+div.scroll a.scroll span::before {
+  content: '';
+  position: absolute;
+  bottom: -140px;
+  left: 45%;
+  width: 1px;
+  height: 120px;
+  background: rgba(116, 106, 87, 0.25);
+}
+
+
+
+div.scroll a.scroll span::after{
+  animation: sdl 3s cubic-bezier(1, 0, 0, 1) infinite;
+}
+@keyframes sdl {
+  0% {
+    transform: scale(1, 0);
+    transform-origin: 0 0;
+  }
+  50% {
+    transform: scale(1, 1);
+    transform-origin: 0 0;
+  }
+  50.1% {
+    transform: scale(1, 1);
+    transform-origin: 0 100%;
+  }
+  100% {
+    transform: scale(1, 0);
+    transform-origin: 0 100%;
+  }
+}
+
+
+
+
+/* ========================================
+    TOP終わり
+========================================= */
+
+
+
+/* ========================================
+    ABOUT Tamanu Oil
+========================================= */
+
+
+div#ABOUT{
+	width: 1100px;
+	height: 700px;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+div#ABOUT h1{
+	font-family: 'Times New Roman';
+	font-size: 35px;
+	margin-left: 0px;
+	margin-top: 100px;
+}
+
+div#ABOUT  p.box{
+	border-bottom: 1px solid rgba(116, 106, 87, 0.7);
+	height:1px;
+	margin-top: 1px;
+	width: 1100px;
+	margin-left: 0;
+}
+
+
+div#ABOUT div.abouttext p{
+	font-size: 14px;
+	margin-left: 0;
+	margin-top: 50px;
+}
+
+div#ABOUT div.space1{
+	margin-top: 50px;
+}
+
+div#ABOUT div.space2{
+	margin-top: 50px;
+}
+
+div#ABOUT div.abouttext p.attention{
+	font-size: 13px;
+	margin-top: 20px;
+}
+
+
+
+div#ABOUT div#sub img{
+ position: absolute;
+margin-top: -173px;
+margin-left: 590px;
+z-index: 20;
+}
+
+div#ABOUT div.sample-box-1{
+border: 4px double rgba(116, 106, 87, 0.7);
+margin: 2em 0;
+padding: 2em;
+width: 160px;
+height: 110px;
+position: absolute;
+margin-top: -185px;
+margin-left: 575px;
+z-index: 10;
+}
+
+div#ABOUT div#sub p {
+	text-align: center;
+	margin-top: -160px;
+	margin-left: 820px;
+	line-height: 25px;
+	font-size: 15px;
+	position: absolute;
+}
+
+div#ABOUT div#sub p span{
+	font-size: 12px;
+}
+
+
+
+/* ========================================
+    ABOUT Tamanu Oil 終わり
+========================================= */
+
+
+/* ========================================
+    PRODUCT
+========================================= */
+
+div#PRODUCT{
+	width: 1100px;
+	height: 600px;
+	margin: 0 auto;
+	position: relative;
+	color: #746a57;
+	letter-spacing: 1px;
+}
+
+
+
+div#PRODUCT h1{
+	font-family: 'Times New Roman';
+	font-size: 35px;
+	margin-left: 0px;
+	margin-top: 100px;
+}
+
+div#PRODUCT  p.box{
+	border-bottom: 1px solid rgba(116, 106, 87, 0.7);
+	height:1px;
+	margin-top: 1px;
+	width: 1100px;
+	margin-left: 0;
+}
+
+
+div#PRODUCT div.col-span-2 {
+	text-align: center;
+	margin-top: 90px;
+margin-left: -480px;
+}
+
+
+
+
+div#PRODUCT h2{
+	font-family: 'Times New Roman';
+	font-size: 25px;
+	margin-top: -400px;
+	text-align: center;
+	margin-left: 450px;
+	line-height: 35px;
+}
+
+div#PRODUCT p{
+	font-size: 13px;
+	font-family: 'Hiragino Mincho ProN';
+	margin-top: 70px;
+	text-align: left;
+	margin-left: 620px;
+}
+
+
+
+/* ========================================
+    PRODUCT終わり
+========================================= */
+
+
+/* ========================================
+    HOW TO USE
+========================================= */
+
+
+div#HOWTO{
+	width: 1100px;
+	height: 700px;
+	margin: 0 auto;
+	position: relative;
+	color: #746a57;
+	letter-spacing: 1px;
+}
+
+
+
+div#HOWTO h1{
+	font-family: 'Times New Roman';
+	font-size: 35px;
+	margin-left: 0px;
+	margin-top: 100px;
+}
+
+div#HOWTO  p.box{
+	border-bottom: 1px solid rgba(116, 106, 87, 0.7);
+	height:1px;
+	margin-top: 1px;
+	width: 1100px;
+	margin-left: 0;
+}
+
+
+
+div#HOWTO div#first p.first{
+	font-family: 'Times New Roman';
+	font-size: 15px;
+	margin-top: 50px;
+	margin-left: 20px;
+	float: left;
+}
+
+div#HOWTO div#first p.toner{
+	font-family: 'Times New Roman';
+	font-size: 15px;
+	position: absolute;
+	top: 95px;
+	left: 220px;
+}
+
+div#HOWTO div#first img.right1{
+	position: absolute;
+	top: 100px;
+	left: 300px;
+}
+
+
+div#HOWTO div#first p.hand{
+	font-family: 'Times New Roman';
+	font-size: 15px;
+	position: absolute;
+	top: 85px;
+	left: 360px;
+}
+
+div#HOWTO div#first img.right2{
+	position: absolute;
+	top: 100px;
+	left: 660px;
+}
+
+div#HOWTO div#first p.milk{
+	font-family: 'Times New Roman';
+	font-size: 15px;
+	position: absolute;
+	top: 95px;
+	left: 720px;
+}
+
+
+div.clear{
+	clear: both;
+}
+
+
+div#HOWTO div#second p.second{
+	font-family: 'Times New Roman';
+	font-size: 15px;
+	position: absolute;
+	margin-top: 100px;
+	margin-left: 30px;
+}
+
+div#HOWTO div#second p.direct{
+	font-family: 'Times New Roman';
+	font-size: 15px;
+	position: absolute;
+	margin-top: 100px;
+	margin-left: 220px;
+}
+
+div#HOWTO img.face{
+	position: absolute;
+	margin-top: 25px;
+	margin-left: 700px;
+}
+
+
+
+div.clear{
+	clear: both;
+}
+
+
+div#HOWTO p.explain1{
+	margin-top: 180px;
+	font-size: 14px;
+	font-family: 'Hiragino Mincho ProN';
+	line-height: 25px;
+}
+
+
+div#HOWTO div#explain2 p{
+	margin-top: 40px;
+	font-size: 14px;
+	font-family: 'Hiragino Mincho ProN';
+	line-height: 25px;
+	padding: 0 0 20px 0;
+}
+
+
+div#HOWTO ul li{
+	margin-top: 20px;
+	font-size: 14px;
+	font-family: 'Hiragino Mincho ProN';
+}
+
+
+div#HOWTO div#explain3 p{
+	font-size: 14px;
+	font-family: 'Hiragino Mincho ProN';
+	margin-top: 40px;
+}
+
+
+
+div#HOWTO div.kakomi-box1 {
+	margin: 2em auto;
+	padding: 1em;
+	width: 90%;
+	background-color: #fff; /* 背景色 */
+	border: 1px solid rgba(116, 106, 87, 0.7); /* 枠線 */
+	width: 550px;
+	height: 300px;
+	margin-top: -340px;
+	margin-right: 70px;
+ }
+
+
+ div#HOWTO div.kakomi-box1 h3{
+	font-size: 15px;
+	font-family: 'Hiragino Mincho ProN';
+	color: #71201B;
+	text-align: center;
+	margin-top: 40px;
+ }
+
+ div#HOWTO div.kakomi-box1 p{
+	font-size: 13px;
+	font-family: 'Hiragino Mincho ProN';
+	text-align: center;
+	margin-top: 30px;
+	line-height: 30px;
+ }
+
+
+ div#HOWTO p.attention2{
+	font-size: 13px;
+	font-family: 'Hiragino Mincho ProN';
+	float: right;
+	margin-top: -20px;
+	margin-right: 70px;
+ }
+
+/* ========================================
+    HOW TO USE終わり
+========================================= */
+
+
+/* ========================================
+    CONTACT
+========================================= */
+
+
+div#CONTACT{
+	width: 1100px;
+	height: 700px;
+	margin: 0 auto;
+	position: relative;
+	color: #746a57;
+	letter-spacing: 1px;
+}
+
+
+div#CONTACT h1{
+	font-family: 'Times New Roman';
+	font-size: 35px;
+	margin-left: 0px;
+	margin-top: 150px;
+}
+
+div#CONTACT p.box{
+	border-bottom: 1px solid rgba(116, 106, 87, 0.7);
+	height:1px;
+	margin-top: 1px;
+	width: 1100px;
+	margin-left: 0;
+}
+
+
+div#CONTACT p{
+	font-size: 14px;
+	font-family: 'Hiragino Mincho ProN';
+	margin-top: 50px;
+}
+
+
+div#CONTACT div.name p{
+  float: left;
+}
+
+div#CONTACT div.name input{
+	margin-top: 44px;
+	margin-left: 110px;
+	height: 30px;
+	width: 350px;
+}
+
+div#CONTACT div.mail p{
+  float: left;
+}
+
+div#CONTACT div.mail input{
+	margin-top: 44px;
+	margin-left: 57px;
+	height: 30px;
+	width: 350px;
+}
+
+div#CONTACT div.content p{
+  float: left;
+}
+
+div#CONTACT div.content textarea{
+	margin-top: 50px;
+	margin-left: 42px;
+	height: 180px;
+	width: 350px;
+}
+
+div#CONTACT button{
+	margin-top: 20px;
+	margin-left: 435px;
+ width: 70px;
+}
+
+div#CONTACT button:hover{
+	color: #fff;
+	background: rgba(116, 106, 87, 1);
+	border-radius : 5%;  
+	cursor: pointer;  
+	border: 1px solid #746a57;
+}
+
+
+div#CONTACT table{
+	margin-top: -40px;
+	margin-left: 800px;
+	font-size: 15px;
+	font-family: 'Hiragino Mincho ProN';
+	letter-spacing: 1px;
+}
+
+
+
+
+/* ========================================
+    CONTACT終わり
+========================================= */
+
+/* ========================================
+    Footer
+========================================= */
+
+footer{
+	width: auto;
+	height: 160px;
+	border-top: 0.7px solid rgba(116, 106, 87, 0.25);
+	position: relative;
+	color: #746a57;
+}
+
+footer .logo a img{
+	margin-top: 30px;
+	margin-left: 105px;
+	float: left;
+}
+
+
+div.clear{
+	clear: both;
+}
+
+footer .coi-span-1{
+	float: left;
+	margin-top: 17px;
+}
+
+footer .coi-span-1 ul.header li{
+	line-height: 35px;
+	margin-left: 140px;
+	font-family: 'Times New Roman';
+	letter-spacing: 1px;
+}
+
+footer .coi-span-2{
+	float: left;
+	margin-top: 17px;
+}
+
+footer .coi-span-2 ul.sns li{
+	line-height: 35px;
+	margin-left: 150px;
+	font-family: 'Times New Roman';
+	letter-spacing: 1px;
+}
+
+
+footer .information{
+	float: left;
+	margin-left: 150px;
+	margin-top: 20px;
+	font-family: 'Times New Roman';
+	letter-spacing: 1px;
+}
+
+
+footer div.LINE p{
+	position: absolute;
+	margin-top: 70px;
+	margin-left: 1110px;
+	font-family: 'Times New Roman';
+	letter-spacing: 1px;
+}
+
+footer div.LINE img{
+	position: absolute;
+	margin-top: 50px;
+	margin-left: -80px;
+}
+
+
+
+
+
+footer div.copyright small{
+	font-family: 'Times New Roman';
+	letter-spacing: 1px;
+	margin-top: 140px;
+  margin-left: -600px;
+	position: absolute;
+	font-size: 13px;
+}
+
+
+
+
+/* ========================================
+    Footer終わり
+========================================= */
+
+
